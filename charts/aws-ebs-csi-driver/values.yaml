@@ -247,6 +247,8 @@ controller:
   # region: us-east-1
   region:
   replicaCount: 2
+  podDisruptionBudget:
+    enabled: true
   revisionHistoryLimit: 10
   socketDirVolume:
     emptyDir: {}
